@@ -36,7 +36,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          Requests
+          Requests.
         </header>
         <StatusDropdown />
         <TableRecords />
