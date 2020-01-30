@@ -1,0 +1,15 @@
+name: git hub sync
+
+on: [push]
+
+jobs:
+  repo-sync:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: repo-sync
+      uses: repo-sync/github-sync@v2
+      with:
+        source_branch: "development"
+        destination_branch: "feature/1"
+        github_token: ${{ secrets.GITHUB_TOKEN }}
