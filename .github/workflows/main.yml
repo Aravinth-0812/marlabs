@@ -1,6 +1,6 @@
 name: git hub sync
 
-on: [pull_request]
+on: [push]
 
 jobs:
   repo-sync:
