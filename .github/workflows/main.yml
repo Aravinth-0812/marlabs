@@ -12,4 +12,4 @@ jobs:
       with:
         source_branch: "development"
         destination_branch: "feature/1"
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.REPO_SYNC_TOKEN }}
